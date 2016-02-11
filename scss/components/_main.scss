@@ -29,8 +29,13 @@ body{
 }
 
 header {
-  padding: 0 1em;
   position: relative;
+}
+
+h1{
+    margin: .5em 2% 0;
+    color:$light-grey;   
+    
 }
 
 .toggle-btn{
@@ -46,19 +51,26 @@ header {
     
     li{
         list-style-type:none; 
+        background-color: black;
         &:first-child a{
             border-top: 1px solid $light-grey;
+             }
+        
+    }
+        a{
+            display: block;
+            color:white;
+            text-align: center;
+            padding: .5em 1em;
+            border-bottom: 1px solid $light-grey;
+            text-decoration: none;
     }
     
-    a{
-        display: block;
-        text-align: center;
-        padding: .5em 1em;
-        border-bottom: 1px solid $light-grey;
-        text-decoration: none;
+    .close-btn{
+            color:black;
+        
     }
     
-    }
 }
 
 .toggle-btn,
@@ -124,8 +136,8 @@ header {
         bottom:0;
         padding: 0;
         min-height: 800px;
-        
-    }   
+            
+}
 }
 
 @media only screen and (min-width: 60em){
@@ -138,6 +150,59 @@ body.noscript .navigation{
     position: static;
     right: auto;
 }
-}
+    
+    .navigation{
+        ul{
+                list-style-type: none;
+                padding-left: 0;
+                position: absolute;
+                top:0;
+                right:0;
+                
+            }
+        
+         .close-btn{
+                        display:none;
+                        
+                    }
+        
+                li{
+                   display: inline-block;
+                    width: 5em;
+                    background-color: white;
+                    
+                }
+                    
+                     a{
+                         border-bottom: 0;
+                          color:$light-grey;
+                     }
+                    
+        
+                li:first-child a{
+                    border-top: 0;
+                   
+                    
+                }
+        
+                        a:hover{
+                            text-decoration: line-through;
+                            color:black;
+                            transition: all .2s linear;
+                        }
+        
+    }   
+    
+    
+
+        
+
+        
+        
+        
+        
+        
+    }
+    
 
 

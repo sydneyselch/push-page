@@ -41,8 +41,12 @@ body.noscript .toggle-btn {
 }
 
 header {
-  padding: 0 1em;
   position: relative;
+}
+
+h1 {
+  margin: .5em 2% 0;
+  color: #ccc;
 }
 
 .toggle-btn {
@@ -57,18 +61,24 @@ header {
 
 .navigation li {
   list-style-type: none;
+  background-color: black;
 }
 
 .navigation li:first-child a {
   border-top: 1px solid #ccc;
 }
 
-.navigation li a {
+.navigation a {
   display: block;
+  color: white;
   text-align: center;
   padding: .5em 1em;
   border-bottom: 1px solid #ccc;
   text-decoration: none;
+}
+
+.navigation .close-btn {
+  color: black;
 }
 
 .toggle-btn,
@@ -149,5 +159,32 @@ header {
   body.noscript .navigation {
     position: static;
     right: auto;
+  }
+  .navigation ul {
+    list-style-type: none;
+    padding-left: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .navigation .close-btn {
+    display: none;
+  }
+  .navigation li {
+    display: inline-block;
+    width: 5em;
+    background-color: white;
+  }
+  .navigation a {
+    border-bottom: 0;
+    color: #ccc;
+  }
+  .navigation li:first-child a {
+    border-top: 0;
+  }
+  .navigation a:hover {
+    text-decoration: line-through;
+    color: black;
+    transition: all .2s linear;
   }
 }

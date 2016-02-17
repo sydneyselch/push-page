@@ -42,11 +42,12 @@ body.noscript .toggle-btn {
 
 header {
   position: relative;
+  height: 200px;
 }
 
 h1 {
   margin: .5em 2% 0;
-  color: #ccc;
+  color: #B0E0E6;
 }
 
 .toggle-btn {
@@ -61,7 +62,7 @@ h1 {
 
 .navigation li {
   list-style-type: none;
-  background-color: black;
+  background-color: #B0E0E6;
 }
 
 .navigation li:first-child a {
@@ -70,7 +71,7 @@ h1 {
 
 .navigation a {
   display: block;
-  color: white;
+  color: #808080;
   text-align: center;
   padding: .5em 1em;
   border-bottom: 1px solid #ccc;
@@ -78,12 +79,12 @@ h1 {
 }
 
 .navigation .close-btn {
-  color: black;
+  color: #E9967A;
 }
 
 .toggle-btn,
 .close-btn {
-  color: #222;
+  color: #B0E0E6;
   text-decoration: none;
   height: 40px;
   width: 40px;
@@ -116,7 +117,7 @@ h1 {
 \\thisis the only time we will ever use max width. EVER.
 
 */
-@media only screen and (max-width: 60em) {
+@media only screen and (max-width: 50em) {
   .site-wrapper {
     position: relative;
     overflow: hidden;
@@ -151,7 +152,7 @@ h1 {
   }
 }
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 50em) {
   .toggle-btn,
   .close-btn {
     display: none;
@@ -177,7 +178,7 @@ h1 {
   }
   .navigation a {
     border-bottom: 0;
-    color: #ccc;
+    color: #E9967A;
   }
   .navigation li:first-child a {
     border-top: 0;

@@ -30,11 +30,12 @@ body{
 
 header {
   position: relative;
+    height: 200px;
 }
 
 h1{
     margin: .5em 2% 0;
-    color:$light-grey;   
+    color:$light-blue;   
     
 }
 
@@ -51,7 +52,7 @@ h1{
     
     li{
         list-style-type:none; 
-        background-color: black;
+        background-color: $light-blue;
         &:first-child a{
             border-top: 1px solid $light-grey;
              }
@@ -59,7 +60,7 @@ h1{
     }
         a{
             display: block;
-            color:white;
+            color:$dark-grey;
             text-align: center;
             padding: .5em 1em;
             border-bottom: 1px solid $light-grey;
@@ -67,7 +68,7 @@ h1{
     }
     
     .close-btn{
-            color:black;
+            color:$coral;
         
     }
     
@@ -103,7 +104,7 @@ h1{
 
 
 
-@media only screen and (max-width: 60em){
+@media only screen and (max-width: 50em){
         
     .site-wrapper{
         position: relative;
@@ -137,10 +138,11 @@ h1{
         padding: 0;
         min-height: 800px;
             
-}
+    }
+    
 }
 
-@media only screen and (min-width: 60em){
+@media only screen and (min-width: 50em){
     .toggle-btn,
     .close-btn{
         display:none;
@@ -175,7 +177,7 @@ body.noscript .navigation{
                     
                      a{
                          border-bottom: 0;
-                          color:$light-grey;
+                          color:$coral;
                      }
                     
         

@@ -63,6 +63,7 @@ h1 {
 .navigation li {
   list-style-type: none;
   background-color: #B0E0E6;
+  font-size: 1.5em;
 }
 
 .navigation li:first-child a {
@@ -76,6 +77,10 @@ h1 {
   padding: .5em 1em;
   border-bottom: 1px solid #ccc;
   text-decoration: none;
+}
+
+.navigation a:first-child {
+  border-bottom: 0;
 }
 
 .navigation .close-btn {

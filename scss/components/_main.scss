@@ -53,6 +53,7 @@ h1{
     li{
         list-style-type:none; 
         background-color: $light-blue;
+        font-size: 1.5em;
         &:first-child a{
             border-top: 1px solid $light-grey;
              }
@@ -65,6 +66,9 @@ h1{
             padding: .5em 1em;
             border-bottom: 1px solid $light-grey;
             text-decoration: none;
+            &:first-child{
+                border-bottom: 0;
+            }
     }
     
     .close-btn{
